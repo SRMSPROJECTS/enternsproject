@@ -1,0 +1,14 @@
+table {
+    border: 5px solid red;
+    background-color: cyan;
+    width: 300px;
+    text-align: center;
+    margin: auto; /* Center the table */
+}
+th, td {
+    border: 5px solid red;
+    padding: 10px;
+}
+th {
+    text-align: center;
+}
