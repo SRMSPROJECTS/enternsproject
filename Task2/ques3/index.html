@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forgot-password-container">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm" onsubmit="return validatePasswords()">
+            <div class="input-group">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Enter new password">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm new password">
+            </div>
+            <div class="button-group">
+                <button type="submit">Save Reset</button>
+                <button type="button" onclick="clearForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validatePasswords() {
+            let newPassword = document.getElementById('newPassword').value;
+            let confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (newPassword === "" || confirmPassword === "") {
+                alert("Both fields are required!");
+                return false;
+            }
+
+            if (newPassword !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            return true;
+        }
+
+        function clearForm() {
+            document.getElementById('forgotPasswordForm').reset();
+        }
+    </script>
+</body>
+</html>
