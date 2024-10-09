@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    background-color: #eaf4fc;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.menu-section {
+    background-color: #eaf4fc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+  
+}
+.head{
+    
+    display:flex;
+    gap:2rem;
+    margin-bottom: 20px;
+}
+img{
+    width:50px;
+}
+.menu-section h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    margin: 10px 0;
+}
+
+.menu-section ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.menu-section ul li a:hover {
+    color: darkblue;
+}
