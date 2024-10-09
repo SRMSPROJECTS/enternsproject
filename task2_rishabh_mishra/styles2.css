@@ -1,0 +1,67 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for header */
+.header {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styling for Home Menu button */
+.home-menu {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Container to hold the three sections (Services, Setup, Reports) */
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #e0ebeb;
+}
+
+/* Styling for each section (Services, Setup, Reports) */
+.section {
+  width: 30%;
+  text-align: center;
+}
+
+/* Header for each section */
+.section h2 {
+  color: darkblue;
+  font-family: 'Georgia', serif;
+}
+
+/* Styling for the lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each list item */
+ul li {
+  margin: 10px 0;
+}
+
+/* Hyperlink styling for the list items in blue */
+ul li a {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 16px;
+}
+
+/* Change hyperlink color on hover */
+ul li a:hover {
+  text-decoration: underline;
+  color: green;
+}
