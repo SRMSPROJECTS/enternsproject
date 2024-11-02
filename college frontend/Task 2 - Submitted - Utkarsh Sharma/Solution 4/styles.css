@@ -1,0 +1,9 @@
+table {
+    border: 5px solid red;
+    background-color: rgb(60, 60, 225);
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black; 
+}
